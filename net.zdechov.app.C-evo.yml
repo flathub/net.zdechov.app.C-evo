@@ -16,7 +16,7 @@ modules:
     sources:
       - type: svn
         url: https://svn.zdechov.net/c-evo/tags/1.3.6
-        revision: 634
+        revision: 636
     buildsystem: simple
     build-options:
       arch:
