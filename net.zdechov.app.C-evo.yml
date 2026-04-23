@@ -1,6 +1,6 @@
 app-id: net.zdechov.app.C-evo
 runtime: org.freedesktop.Platform
-runtime-version: '24.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.freepascal
@@ -17,6 +17,8 @@ modules:
   - shared-modules/gtk2/gtk2.json
   - name: portaudio
     buildsystem: cmake-ninja
+    config-opts:
+      - -DCMAKE_POLICY_VERSION_MINIMUM=3.5
     sources:
       - type: git
         url: https://github.com/PortAudio/portaudio.git
