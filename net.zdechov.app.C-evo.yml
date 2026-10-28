@@ -12,7 +12,6 @@ finish-args:
   - --socket=pulseaudio
   - --device=all # ALSA
   - --share=ipc
-  - --device=dri
 modules:
   - shared-modules/gtk2/gtk2.json
   - name: portaudio
